@@ -1,0 +1,24 @@
+h1{
+    color: pink;
+    font-size: 80px;
+}
+
+.html-title{
+color:orange;
+}
+
+div p{
+color:blue;
+}
+
+p{
+color:#2b546a;
+}
+
+.main{
+background-color:pink;
+}
+
+body{
+background-image:url("img/image1.png");
+}
