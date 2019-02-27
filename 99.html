@@ -5,7 +5,16 @@
 </head>
 <body>
 <script>
-    window.alert('Hello,world!');
+var num = 0;
+var x = window.prompt("数字を入力してください");
+for(var i = 1;i <= x;i++){
+    for(var j = 1;j <= x;j++){
+    num = i*j;
+        document.write(num);
+        document.write(" ");
+    }
+    document.write("<br>")
+}
 </script>
 </body>
 </html>
