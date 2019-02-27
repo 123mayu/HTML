@@ -2,18 +2,45 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <style>
+    table {
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    td{
+    width:100px;
+    height:50px;
+      border: solid 1px;
+      text-align: center;
+    }
+    </style>
 </head>
+
 <body>
+<table id="kuku"></table>
 <script>
 var num = 0;
 var x = window.prompt("数字を入力してください");
-for(var i = 1;i <= x;i++){
-    for(var j = 1;j <= x;j++){
+
+var hyo = document.getElementById("kuku");
+for(var i = 0;i <= x;i++){
+var yoko = hyo.insertRow(-1);
+    for(var j = 0;j <= x;j++){
+    var tate = yoko.insertCell(-1);
     num = i*j;
-        document.write(num);
-        document.write(" ");
+    if(i == 0){
+    tate.textContent=j;
+    }else{
+
+    if(j == 0){
+    tate.textContent=i;
+    }else{
+    tate.textContent=i+"×"+j+"="+num;
     }
-    document.write("<br>")
+
+    }
+
+    }
 }
 </script>
 </body>
